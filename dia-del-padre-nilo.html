@@ -169,11 +169,42 @@
       font-size: 0.85em;
     }
 
+    .music-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      border: none;
+      background: linear-gradient(135deg, #e63939, #f77f00);
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(230,57,57,0.4);
+      z-index: 100;
+      transition: all .3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .music-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 25px rgba(230,57,57,0.5);
+    }
+
+    .music-btn.playing {
+      background: linear-gradient(135deg, #dc2626, #ef4444);
+      box-shadow: 0 6px 20px rgba(220,38,38,0.4);
+    }
+
     @media (max-width: 400px) {
       h1 { font-size: 2.4em; }
       .header { padding: 40px 20px 30px; }
       .content { padding: 30px 20px; }
       .message { font-size: 1em; }
+      .music-btn { width: 48px; height: 48px; font-size: 20px; bottom: 18px; right: 18px; }
     }
   </style>
 </head>
@@ -209,5 +240,32 @@
       <small>Junio 2026</small>
     </div>
   </div>
+
+  <audio id="bg-music" loop preload="auto" autoplay>
+    <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/tracks/usBbBvsn2sx3xyPzZDsxv9SMa1oFHLwno3Vv1RFr.mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="music-btn" id="musicBtn">⏸</button>
+
+  <script>
+    const music = document.getElementById('bg-music');
+    const btn = document.getElementById('musicBtn');
+
+    btn.addEventListener('click', function() {
+      if (music.paused) {
+        music.play();
+        btn.textContent = '⏸';
+      } else {
+        music.pause();
+        btn.textContent = '🎵';
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      music.play().catch(() => {
+        btn.textContent = '🎵';
+      });
+    });
+  </script>
 </body>
 </html>

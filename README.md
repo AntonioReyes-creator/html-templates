@@ -16,6 +16,11 @@ Cada tarjeta incluye:
 - Animaciones suaves (fade-in, pulso)
 - Fuentes de Google (Playfair Display + Poppins)
 - Gradientes y sombras modernas
+- Música de fondo con reproducción automática
+
+## Música
+
+La música de fondo usada es **"Smooth Inspiring Background"** de [Splashkabona](https://freemusicarchive.org/music/splashkabona/), licenciada bajo [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ## Cómo usar
 
