@@ -1,0 +1,255 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz Día del Padre - Daniel ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#3b82f6);
+}
+
+.card{
+    max-width:700px;
+    width:100%;
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+    animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.header{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    text-align:center;
+    padding:60px 30px 50px;
+    position:relative;
+    overflow:hidden;
+}
+
+.header::before{
+    content:"👨‍🏫";
+    position:absolute;
+    font-size:120px;
+    right:-10px;
+    top:-20px;
+    opacity:.08;
+}
+
+.header::after{
+    content:"💻";
+    position:absolute;
+    left:20px;
+    bottom:10px;
+    font-size:70px;
+    opacity:.08;
+}
+
+.header h1{
+    font-family:'Playfair Display',serif;
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.dad-name{
+    font-size:1.6rem;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+.subtitle{
+    margin-top:10px;
+    opacity:.9;
+    font-weight:300;
+}
+
+.content{
+    padding:45px 35px;
+}
+
+.emoji{
+    text-align:center;
+    font-size:70px;
+    margin-bottom:25px;
+}
+
+.message{
+    color:#444;
+    line-height:1.9;
+    font-size:1.08rem;
+}
+
+.message p{
+    margin-bottom:20px;
+}
+
+.highlight{
+    color:#1e3a8a;
+    font-weight:600;
+}
+
+.quote{
+    margin:30px 0;
+    padding:20px;
+    background:#f8fafc;
+    border-left:5px solid #3b82f6;
+    border-radius:10px;
+    font-style:italic;
+    color:#334155;
+}
+
+.divider{
+    width:90px;
+    height:4px;
+    background:linear-gradient(to right,#1e3a8a,#60a5fa);
+    margin:30px auto;
+    border-radius:10px;
+}
+
+.signature{
+    text-align:center;
+    font-size:1.4rem;
+    color:#1e293b;
+    font-weight:600;
+}
+
+.footer{
+    background:#f8fafc;
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #e2e8f0;
+}
+
+.footer .name{
+    font-weight:600;
+    color:#0f172a;
+}
+
+.footer small{
+    display:block;
+    margin-top:10px;
+    color:#64748b;
+}
+
+@media(max-width:600px){
+    .header h1{
+        font-size:2.2rem;
+    }
+
+    .dad-name{
+        font-size:1.2rem;
+    }
+
+    .content{
+        padding:30px 25px;
+    }
+
+    .message{
+        font-size:1rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="header">
+        <h1>Feliz Día del Padre</h1>
+        <p class="dad-name">👨‍🏫 DANIEL</p>
+        <p class="subtitle">Un maestro, un guía y una gran persona</p>
+    </div>
+
+    <div class="content">
+
+        <div class="emoji">🎉❤️</div>
+
+        <div class="message">
+
+            <p>
+                En este <strong>Día del Padre</strong>, quiero dedicar unas palabras a una persona muy especial.
+            </p>
+
+            <p>
+                Don <span class="highlight">Daniel</span>, usted es mucho más que un maestro de computación. Es una persona admirable, respetable y llena de valores que inspiran a quienes tienen la fortuna de conocerlo.
+            </p>
+
+            <p>
+                Siempre se ha caracterizado por ser una persona <span class="highlight">atenta, generosa, amable y cariñosa</span>. Le gusta compartir sus conocimientos, ayudar a los demás y brindar apoyo cuando alguien lo necesita.
+            </p>
+
+            <p>
+                Su dedicación, responsabilidad y compromiso son cualidades que hablan de la gran persona que es. Cada enseñanza, cada consejo y cada experiencia compartida dejan una huella positiva en quienes lo rodean.
+            </p>
+
+            <p>
+                A veces puede parecer serio, pero quienes lo conocemos sabemos que detrás de esa seriedad existe un gran corazón, lleno de bondad, sabiduría y cariño por su familia.
+            </p>
+
+            <div class="quote">
+                "Las mejores enseñanzas no siempre vienen de los libros, sino de las personas que nos inspiran con su ejemplo cada día."
+            </div>
+
+            <p>
+                Gracias por todo lo que aporta, por sus enseñanzas, por su tiempo y por demostrar día a día que la verdadera grandeza está en la humildad, el respeto y la generosidad.
+            </p>
+
+            <p>
+                Que este día esté lleno de alegría, salud, bendiciones y momentos inolvidables junto a las personas que más lo quieren.
+            </p>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="signature">
+            ¡Feliz Día del Padre! ❤️
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>
+            Con mucho cariño y respeto,<br>
+            <span class="name">Antonio</span>
+        </p>
+
+        <small>
+            Junio 2026 • Un reconocimiento a un gran padre y una gran persona.
+        </small>
+    </div>
+
+</div>
+
+</body>
+</html>
+```
