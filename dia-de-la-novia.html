@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz Día de la Novia 💍</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#fdf2f8,#fce7f3,#fbcfe8);
+}
+
+.card{
+    max-width:650px;
+    width:100%;
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 25px 60px rgba(236,72,153,.2);
+    animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.header{
+    background:linear-gradient(135deg,#ec4899,#f472b6,#f9a8d4);
+    color:white;
+    text-align:center;
+    padding:60px 30px 50px;
+    position:relative;
+    overflow:hidden;
+}
+
+.header::before{
+    content:"👰";
+    position:absolute;
+    font-size:120px;
+    right:-10px;
+    top:-20px;
+    opacity:.12;
+}
+
+.header::after{
+    content:"💕";
+    position:absolute;
+    left:20px;
+    bottom:10px;
+    font-size:70px;
+    opacity:.12;
+}
+
+.header h1{
+    font-family:'Playfair Display',serif;
+    font-size:3rem;
+    margin-bottom:15px;
+    text-shadow:0 3px 15px rgba(0,0,0,.15);
+}
+
+.bride-name{
+    font-size:1.6rem;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+.subtitle{
+    margin-top:10px;
+    opacity:.9;
+    font-weight:300;
+}
+
+.content{
+    padding:45px 35px;
+}
+
+.emoji{
+    text-align:center;
+    font-size:70px;
+    margin-bottom:25px;
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+}
+
+.message{
+    color:#444;
+    line-height:1.9;
+    font-size:1.08rem;
+}
+
+.message p{
+    margin-bottom:20px;
+}
+
+.highlight{
+    color:#ec4899;
+    font-weight:600;
+}
+
+.quote{
+    margin:30px 0;
+    padding:20px;
+    background:#fdf2f8;
+    border-left:5px solid #ec4899;
+    border-radius:10px;
+    font-style:italic;
+    color:#334155;
+}
+
+.divider{
+    width:90px;
+    height:4px;
+    background:linear-gradient(to right,#ec4899,#f9a8d4);
+    margin:30px auto;
+    border-radius:10px;
+}
+
+.signature{
+    text-align:center;
+    font-size:1.4rem;
+    color:#ec4899;
+    font-weight:600;
+}
+
+.footer{
+    background:#fdf2f8;
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #fce7f3;
+}
+
+.footer .name{
+    font-weight:600;
+    color:#831843;
+}
+
+.footer small{
+    display:block;
+    margin-top:10px;
+    color:#9d174d;
+}
+
+.music-btn{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    border:none;
+    background:linear-gradient(135deg,#ec4899,#f472b6);
+    color:white;
+    font-size:24px;
+    cursor:pointer;
+    box-shadow:0 6px 20px rgba(236,72,153,.4);
+    z-index:100;
+    transition:all .3s ease;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.music-btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 8px 25px rgba(236,72,153,.5);
+}
+
+.music-btn.playing{
+    background:linear-gradient(135deg,#db2777,#ec4899);
+    box-shadow:0 6px 20px rgba(219,39,119,.4);
+}
+
+.confetti{
+    position:fixed;
+    top:-10px;
+    font-size:20px;
+    animation:fall linear forwards;
+    pointer-events:none;
+    z-index:50;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(105vh) rotate(720deg);
+        opacity:0;
+    }
+}
+
+@media(max-width:600px){
+    .header h1{
+        font-size:2.2rem;
+    }
+
+    .bride-name{
+        font-size:1.2rem;
+    }
+
+    .content{
+        padding:30px 25px;
+    }
+
+    .message{
+        font-size:1rem;
+    }
+
+    .music-btn{
+        width:48px;
+        height:48px;
+        font-size:20px;
+        bottom:18px;
+        right:18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="header">
+        <h1>Feliz Día de la Novia</h1>
+        <p class="bride-name">💍 LA NOVIA</p>
+        <p class="subtitle">Un día para celebrar el amor</p>
+    </div>
+
+    <div class="content">
+
+        <div class="emoji">👩‍❤️‍👨</div>
+
+        <div class="message">
+
+            <p>
+                Hoy celebramos el <strong>Día de la Novia</strong>, un día especial para honrar a la mujer más maravillosa, la que ha llenado de alegría y amor nuestra vida.
+            </p>
+
+            <p>
+                Mi <span class="highlight">novia</span>, eres la persona que ilumina mis días con tu sonrisa, que llena mi corazón de felicidad con tu cariño y que hace de cada momento un recuerdo inolvidable.
+            </p>
+
+            <p>
+                Eres <span class="highlight">hermosa, inteligente, cariñosa y llena de bondad</span>. Tu amor me ha dado la fortaleza para enfrentar cualquier obstáculo y la alegría de compartir cada día a tu lado.
+            </p>
+
+            <p>
+                Gracias por elegirme, por confiar en mí y por construir juntos un amor que crece más fuerte con cada día que pasa. Cada momento a tu lado es un regalo que atesoro en el fondo de mi corazón.
+            </p>
+
+            <p>
+                Prometo seguir cuidándote, respetándote y amándote con toda mi fuerza, hoy y siempre. Tú eres mi presente, mi futuro y el amor de mi vida.
+            </p>
+
+            <div class="quote">
+                "El amor no se mide por el tiempo que pasamos juntos, sino por la profundidad con la que nos amamos."
+            </div>
+
+            <p>
+                Que este día esté lleno de amor, risas y momentos mágicos. Que cada día que pase juntos sea mejor que el anterior, y que nuestro amor siga creciendo como la flor más hermosa del jardín.
+            </p>
+
+            <p>
+                Te amo más de lo que las palabras pueden expresar. 💕
+            </p>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="signature">
+            ¡Feliz Día de la Novia! 💍✨
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>
+            Con todo mi amor,<br>
+            <span class="name">Tu novio</span>
+        </p>
+
+        <small>
+            Junio 2026 • Celebrando nuestro amor eterno.
+        </small>
+    </div>
+
+</div>
+
+<audio id="bg-music" loop preload="auto" autoplay>
+    <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/tracks/usBbBvsn2sx3xyPzZDsxv9SMa1oFHLwno3Vv1RFr.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" id="musicBtn">⏸</button>
+
+<script>
+    const music=document.getElementById('bg-music');
+    const btn=document.getElementById('musicBtn');
+
+    btn.addEventListener('click', function(){
+        if(music.paused){
+            music.play();
+            btn.textContent='⏸';
+        }else{
+            music.pause();
+            btn.textContent='🎵';
+        }
+    });
+
+    document.addEventListener('DOMContentLoaded',()=>{
+        music.play().catch(()=>{
+            btn.textContent='🎵';
+        });
+    });
+
+    // Confetti effect
+    function createConfetti(){
+        const emojis=['💕','💖','💗','💍','💐','✨','🌸','💝'];
+        const confetti=document.createElement('div');
+        confetti.className='confetti';
+        confetti.textContent=emojis[Math.floor(Math.random()*emojis.length)];
+        confetti.style.left=Math.random()*100+'vw';
+        confetti.style.animationDuration=(Math.random()*3+4)+'s';
+        document.body.appendChild(confetti);
+        setTimeout(()=>confetti.remove(),7000);
+    }
+
+    setInterval(createConfetti,2000);
+</script>
+
+</body>
+</html>
